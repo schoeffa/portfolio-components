@@ -39,3 +39,15 @@
   z-index: 1;
 }
 
+// Fade-slide transition styles
+.fade-slide-enter-active, .fade-slide-leave-active {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.fade-slide-enter-from {
+  opacity: 0;
+  transform: translateY(20px); // Slide up on enter
+}
+.fade-slide-leave-to {
+  opacity: 0;
+  transform: translateY(20px); // Slide down on leave
+}

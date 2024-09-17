@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@storybook/preview-api": "^8.3.0",
+    "storybook-addon-vue-slots": "^0.9.29",
     "vue": "^3.4.29",
     "vue-debounce": "^5.0.0"
   },

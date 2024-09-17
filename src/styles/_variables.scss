@@ -1,11 +1,13 @@
+$white: #ffffff;
+$black: #1a1a1a;
 $primary-color: #00bfff; // Deep Sky Blue
 $secondary-color: #ff00ff; // Neon Pink
 $primary-hover-color: #0099cc; // Darker Deep Sky Blue
 $secondary-hover-color: #cc00cc; // Darker Neon Pink
 $text-color-primary: $primary-color; // White for text to stand out on dark background
 $text-color-secondary: $secondary-color;
-$text-color-light: #ffffff;
-$text-color-dark: #1a1a1a;
+$text-color-light: $white;
+$text-color-dark: $black;
 $background-color: transparent; // Transparent background
 
 $font-family: 'Neuropol', sans-serif;
@@ -14,5 +16,5 @@ $border-radius: 8px;
 $padding: 12px 24px;
 $padding-y: 12px;
 $padding-x: 24px;
-$box-shadow-color: rgba(0, 0, 0, 0.5);
-$neon-glow-color: rgba(255, 255, 255, 0.5); // Neon glow color
+$box-shadow-color: rgba($black, 0.5);
+$neon-glow-color: rgba($white, 0.5); // Neon glow color
