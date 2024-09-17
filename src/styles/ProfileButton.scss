@@ -58,11 +58,8 @@
   &--secondary {
     border-color: $secondary-color;
     color: $text-color-dark;
-    text-shadow: 0 0 .5px $primary-color, 0 0 1px $primary-color;
+    text-shadow: 0 0 .5px $secondary-color, 0 0 1px $secondary-color;
 
-    &-dark-mode {
-      color: $text-color-light;
-    }
 
     &:hover {
       animation: neon-flicker-secondary 1.5s infinite alternate;
@@ -78,7 +75,6 @@
       }
     }
   }
-
   &--dark-mode {
     color: $text-color-light;
   }
@@ -119,6 +115,13 @@
   }
 }
 
+.dark-mode {
+  .terminus-button {
+    color: $text-color-light;
+  }
+}
+
+
 // Responsive design
 @media (max-width: 768px) {
   .button {
@@ -148,12 +151,12 @@
 
 @keyframes neon-flicker-secondary {
   0% {
-    box-shadow: 0 0 5px $secondary-color, 0 0 10px $secondary-color;
+    box-shadow: 0 0 4px $secondary-color, 0 0 8px $secondary-color;
   }
   50% {
-    box-shadow: 0 0 8px $secondary-color, 0 0 12px $secondary-color, 0 0 16px $secondary-color;
+    box-shadow: 0 0 6px $secondary-color, 0 0 8px $secondary-color, 0 0 10px $secondary-color;
   }
   100% {
-    box-shadow: 0 0 5px $secondary-color, 0 0 10px $secondary-color;
+    box-shadow: 0 0 4px $secondary-color, 0 0 8px $secondary-color;
   }
 }

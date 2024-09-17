@@ -6,15 +6,15 @@
   </transition>
 </template>
 <script setup>
-import '../styles/button.scss'
-import { computed } from 'vue'
+import '../styles/ProfileButton.scss';
+import { computed } from 'vue';
 
 const {
   isDarkMode = false,
   isPrimary = true,
   isSmall = false,
   text = ''
-} = defineProps({ isDarkMode: Boolean, isPrimary: Boolean, isSmall: Boolean, text: String })
+} = defineProps({ isDarkMode: Boolean, isPrimary: Boolean, isSmall: Boolean, text: String });
 
 const classes = computed(() => [
   'terminus-button',
@@ -23,5 +23,5 @@ const classes = computed(() => [
   {
     'terminus-button--dark-mode': isDarkMode
   }
-])
+]);
 </script>
