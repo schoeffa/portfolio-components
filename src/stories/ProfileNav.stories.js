@@ -1,7 +1,7 @@
 import ProfileNav from '@/components/ProfileNav.vue';
 
-import '../styles/ProfileNav.scss';
-import '../styles/ProfileNavLink.scss';
+import '../styles/_ProfileNav.scss';
+import '../styles/_ProfileNavLink.scss';
 
 export default {
   title: 'Components/ProfileNav',

@@ -14,3 +14,7 @@ const classes = [
     {{ text }}
   </a>
 </template>
+
+<style lang="scss">
+@import '@/styles/ProfileNavLink';
+</style>

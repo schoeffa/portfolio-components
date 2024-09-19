@@ -1,5 +1,5 @@
 import ProfileNavLink from '../components/ProfileNavLink.vue';
-import '../styles/ProfileNavLink.scss';
+import '../styles/_ProfileNavLink.scss';
 
 export default {
   title: 'components/ProfileNavLink',

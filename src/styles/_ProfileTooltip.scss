@@ -1,32 +1,6 @@
 @import "variables";
 @import "fonts";
 
-.profile-tooltip-wrapper {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-
-  &--dark-mode {
-    .profile-tooltip {
-      color: $text-color-dark;
-      background-color: rgba($white, 0.85);
-    }
-
-    .tooltip-top .tooltip-arrow {
-      border-color: rgba($white, 0.85) transparent transparent transparent;
-    }
-    .tooltip-right .tooltip-arrow {
-      border-color: transparent rgba($white, 0.85) transparent transparent;
-    }
-    .tooltip-bottom .tooltip-arrow {
-      border-color: transparent transparent rgba($white, 0.85) transparent;
-    }
-    .tooltip-left .tooltip-arrow {
-      border-color: transparent transparent transparent rgba($white, 0.85);
-    }
-  }
-}
-
 .profile-tooltip {
   position: absolute;
   padding: 8px 12px;
@@ -53,6 +27,37 @@
     box-shadow: 0 0 10px $primary-color, 0 0 20px $primary-color;
     z-index: -1;
   }
+
+  &-wrapper {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+    &--dark-mode {
+      .profile-tooltip {
+        color: $text-color-dark;
+        background-color: rgba($white, 0.85);
+      }
+
+      .tooltip-top .tooltip-arrow {
+        border-color: rgba($white, 0.85) transparent transparent transparent;
+      }
+      .tooltip-right .tooltip-arrow {
+        border-color: transparent rgba($white, 0.85) transparent transparent;
+      }
+      .tooltip-bottom .tooltip-arrow {
+        border-color: transparent transparent rgba($white, 0.85) transparent;
+      }
+      .tooltip-left .tooltip-arrow {
+        border-color: transparent transparent transparent rgba($white, 0.85);
+      }
+    }
+  }
+
+}
+
+.profile-tooltip {
+
 }
 
 // Tooltip Arrow

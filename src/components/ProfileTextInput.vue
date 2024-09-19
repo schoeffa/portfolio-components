@@ -27,7 +27,7 @@ const handleBlur = () => {
 
 const wrapperClasses = computed(() => [
   'profile-input-wrapper',
-  { 'is-focused': isFocused.value || modelValue, 'profile-input-wrapper--dark-mode': isDarkMode }
+  { 'is-focused': isFocused.value || modelValue }
 ]);
 </script>
 
@@ -49,82 +49,5 @@ const wrapperClasses = computed(() => [
 </template>
 
 <style scoped lang="scss">
-@import '@/styles/variables.scss';
-
-.profile-input-wrapper {
-  position: relative;
-  margin-bottom: 20px;
-  width: 100%;
-
-  &.is-focused .profile-input-label {
-    top: -16px;
-    font-size: 12px;
-    color: $primary-hover-color;
-  }
-
-  &--dark-mode {
-    .profile-input-label {
-      //background-color: rgba($black, 0.5);
-      color: rgba($secondary-color, 0.5);
-    }
-    .profile-input {
-      background-color: rgba($white, 0.5);
-    }
-  }
-}
-
-.profile-input-label {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  font-family: $font-family;
-  color: rgba($white, 0.5);
-  font-size: 16px;
-  pointer-events: none;
-  transition:
-    top 0.3s ease,
-    font-size 0.3s ease,
-    color 0.3s ease;
-}
-
-.profile-input {
-  font-family: $font-family;
-  font-size: 16px;
-  padding: 12px;
-  border: 2px solid $primary-color;
-  border-radius: 6px;
-  background-color: rgba($black, 0.85);
-  color: $text-color-light;
-  width: 100%;
-  outline: none;
-  transition:
-    border-color 0.3s ease,
-    box-shadow 0.3s ease;
-
-  &:focus {
-    border-color: $primary-hover-color;
-    box-shadow:
-      0 0 15px $primary-hover-color,
-      0 0 30px $primary-hover-color;
-  }
-
-  &::placeholder {
-    color: transparent;
-  }
-
-  &.input-small {
-    padding: 8px;
-    font-size: 14px;
-  }
-
-  &.input-medium {
-    padding: 12px;
-    font-size: 16px;
-  }
-
-  &.input-large {
-    padding: 16px;
-    font-size: 18px;
-  }
-}
+@import '@/styles/ProfileTextInput';
 </style>

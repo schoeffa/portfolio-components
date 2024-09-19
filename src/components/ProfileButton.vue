@@ -6,7 +6,6 @@
   </transition>
 </template>
 <script setup>
-import '../styles/ProfileButton.scss';
 import { computed } from 'vue';
 
 const {
@@ -17,11 +16,15 @@ const {
 } = defineProps({ isDarkMode: Boolean, isPrimary: Boolean, isSmall: Boolean, text: String });
 
 const classes = computed(() => [
-  'terminus-button',
-  isPrimary ? 'terminus-button--primary' : 'terminus-button--secondary',
-  isSmall ? 'terminus-button--small' : 'terminus-button--default',
+  'profile-button',
+  isPrimary ? 'profile-button--primary' : 'profile-button--secondary',
+  isSmall ? 'profile-button--small' : 'profile-button--default',
   {
-    'terminus-button--dark-mode': isDarkMode
+    'profile-button--dark-mode': isDarkMode
   }
 ]);
 </script>
+
+<style lang="scss">
+@import '@/styles/ProfileButton';
+</style>

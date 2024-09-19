@@ -1,7 +1,7 @@
 import { fn } from '@storybook/test';
 
 import ProfileButton from '../components/ProfileButton.vue';
-import '../styles/ProfileButton.scss';
+import '../styles/_ProfileButton.scss';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories
 export default {

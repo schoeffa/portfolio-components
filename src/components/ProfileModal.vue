@@ -1,5 +1,4 @@
 <script setup>
-import '../styles/ProfileModal.scss';
 const { isDarkMode = false } = defineProps({ isDarkMode: Boolean, isVisible: Boolean });
 
 const classes = ['profile-modal-overlay', { 'profile-modal-overlay--dark-mode': isDarkMode }];
@@ -17,3 +16,7 @@ const classes = ['profile-modal-overlay', { 'profile-modal-overlay--dark-mode': 
     </div>
   </transition>
 </template>
+
+<style lang="scss">
+@import '@/styles/ProfileModal';
+</style>

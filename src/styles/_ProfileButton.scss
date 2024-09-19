@@ -4,7 +4,7 @@
 @import 'transitions';
 @import 'variables';
 
-.terminus-button {
+.profile-button {
   display: inline-block;
   font-family: $font-family;
   font-size: $font-size;
@@ -116,7 +116,7 @@
 }
 
 .dark-mode {
-  .terminus-button {
+  .profile-button {
     color: $text-color-light;
   }
 }

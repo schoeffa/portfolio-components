@@ -1,5 +1,5 @@
 import ProfileModal from '../components/ProfileModal.vue';
-import '../styles/ProfileModal.scss';
+import '../styles/_ProfileModal.scss';
 
 export default {
   title: 'components/ProfileModal',

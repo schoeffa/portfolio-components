@@ -1,7 +1,6 @@
 <script setup>
 import { computed } from 'vue';
 import ProfileNavLink from '@/components/ProfileNavLink.vue';
-import '../styles/ProfileNav.scss';
 
 const { isDarkMode = false, isVertical = false } = defineProps({
   isDarkMode: Boolean,
@@ -31,3 +30,7 @@ const classes = computed(() => [
     </nav>
   </transition>
 </template>
+
+<style lang="scss">
+@import '@/styles/ProfileNav';
+</style>

@@ -1,5 +1,5 @@
 <script setup>
-import '../styles/ProfileTooltip.scss';
+import '../styles/_ProfileTooltip.scss';
 import { computed, ref } from 'vue';
 
 const { isDarkMode = false, position = 'top' } = defineProps({
@@ -35,3 +35,7 @@ const hideTooltip = () => {
     </transition>
   </div>
 </template>
+
+<style lang="scss">
+@import '@/styles/ProfileTooltip';
+</style>

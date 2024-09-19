@@ -46,5 +46,5 @@ const selectItem = (item) => {
 </template>
 
 <style lang="scss">
-@import '@/styles/ProfileDropdown.scss';
+@import '@/styles/ProfileDropdown';
 </style>
