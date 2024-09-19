@@ -1,18 +1,12 @@
 <script setup>
 import { computed, ref } from 'vue';
 
-const {
-  isDarkMode = false,
-  modelValue = '',
-  size = 'medium'
-} = defineProps({
+const { modelValue = '', size = 'medium' } = defineProps({
   modelValue: String,
-  type: String,
   label: String,
   placeholder: String,
   size: String,
-  inputId: String,
-  isDarkMode: Boolean
+  inputId: String
 });
 
 const isFocused = ref(false);
@@ -36,7 +30,7 @@ const wrapperClasses = computed(() => [
     <label v-if="label" :for="inputId" class="profile-input-label">{{ label }}</label>
     <input
       :id="inputId"
-      :type="type"
+      type="text"
       :value="modelValue"
       :placeholder="placeholder"
       class="profile-input"

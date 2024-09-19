@@ -4,6 +4,7 @@
   font-family: $font-family;
   font-size: 16px;
   padding: 12px;
+  box-sizing: border-box;
   border: 2px solid $primary-color;
   border-radius: 6px;
   background-color: rgba($black, 0.85);

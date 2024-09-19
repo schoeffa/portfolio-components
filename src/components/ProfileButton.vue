@@ -1,6 +1,6 @@
 <template>
   <transition name="cyberpunk-button" appear>
-    <button type="button" :class="classes" @click="$emit('click')">
+    <button :type="type" :class="classes" @click="$emit('click')">
       <span>{{ text }}</span>
     </button>
   </transition>
@@ -12,8 +12,15 @@ const {
   isDarkMode = false,
   isPrimary = true,
   isSmall = false,
-  text = ''
-} = defineProps({ isDarkMode: Boolean, isPrimary: Boolean, isSmall: Boolean, text: String });
+  text = '',
+  type = 'button'
+} = defineProps({
+  isDarkMode: Boolean,
+  isPrimary: Boolean,
+  isSmall: Boolean,
+  text: String,
+  type: String
+});
 
 const classes = computed(() => [
   'profile-button',
