@@ -1,0 +1,50 @@
+@import 'variables';
+
+.portfolio-loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+svg {
+  height: fit-content;
+  max-height: 100%;
+}
+
+.flicker {
+  -webkit-animation: blink 0.01s ease-out infinite alternate;
+  -moz-animation: blink 0.01s ease-out infinite alternate;
+  -o-animation: blink 0.01s ease-out infinite alternate;
+  animation: blink 0.01s ease-out infinite alternate;
+}
+
+@keyframes blink {
+  70% {
+    opacity: 0.7;
+  }
+}
+
+.fade {
+  animation:
+          fade 3s infinite alternate,
+          blink 0.01s ease-out infinite alternate;
+}
+
+@keyframes fade {
+  40% {
+    opacity: 0.8;
+  }
+  43% {
+    opacity: 0.1;
+  }
+  45% {
+    opacity: 0.8;
+  }
+  48% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
