@@ -1,6 +1,6 @@
-import PortfolioForm from '@/components/PortfolioForm.vue';
-import PortfolioTextInput from '@/components/PortfolioTextInput.vue';
-import PortfolioTextAreaInput from '@/components/PortfolioTextAreaInput.vue';
+import PortfolioForm from '../components/PortfolioForm.vue';
+import PortfolioTextInput from '../components/PortfolioTextInput.vue';
+import PortfolioTextAreaInput from '../components/PortfolioTextAreaInput.vue';
 
 export default {
   title: 'components/PortfolioForm',

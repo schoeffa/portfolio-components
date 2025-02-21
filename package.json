@@ -1,5 +1,6 @@
 {
   "name": "portfolio-components",
+  "homepage": "https://schoeffa.github.io/portfolio-components",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -11,7 +12,9 @@
     "format": "prettier --write src/",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=chpt_0c55c14aaece02a"
+    "chromatic": "npx chromatic --project-token=chpt_0c55c14aaece02a",
+    "predeploy": "npm run build-storybook",
+    "deploy-storybook": "gh-pages -d storybook-static"
   },
   "dependencies": {
     "@storybook/preview-api": "^8.3.0",
@@ -36,6 +39,7 @@
     "eslint": "^8.57.0",
     "eslint-plugin-storybook": "^0.8.0",
     "eslint-plugin-vue": "^9.23.0",
+    "gh-pages": "^6.2.0",
     "prettier": "^3.2.5",
     "sass": "^1.78.0",
     "sass-loader": "^16.0.1",
